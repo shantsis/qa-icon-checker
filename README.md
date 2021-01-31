@@ -1,5 +1,5 @@
 # Introduction
-This plugin is a quality assurance checker to make sure icons are configured properly for use in Figma and the code integration.
+This plugin is a quality assurance checker to make sure icons are configured properly for use in Figma and the code integration of the neo design system.
 
 ## What Does the Plugin Check?
 The plugin checks a number of configurations including:
@@ -13,12 +13,16 @@ The plugin checks a number of configurations including:
 # How to Use
 To run the plugin,
 
-1. Ensure you have the plugin enabled. It should be enabled by default, but if not reach out to Shaina. [Learn more about checking installed plugins](https://help.figma.com/hc/en-us/articles/360040450413-Find-and-install-plugins).
+1. Install the plugin.
 2. Open the Icons file and navigate to the page where the components are located.
 3. From the menu, File -> Plugins -> QA Tester - Icons.
 4. Once the file runs, you should see either a success or error message explaining what to fix.
 
-# Prerequisites
-Follow the Icon Contribution Guidelines to ensure the components are set up properly.
+# Making it Your Own
+Create and add your rules by adjusting the variables and checks available.
+* code.ts compiles the checks into one places and runs them
+* export.ts checks export-related properties
+* layer.ts checks the name and layering properties
+* messages.ts includes a list of the various error messages
+* visual.ts checks the sizing and appearance
 
-# qa-icon-checker
