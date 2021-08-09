@@ -5,7 +5,12 @@ import * as exports from "./export"
 import * as layer from "./layer"
 
 //run the plugin
-main()
+if (figma.command === "open") {
+  main()
+}
+else {
+  main()
+}
 
 function main() {
 
@@ -50,6 +55,7 @@ function main() {
   }
 
   //close the plugin
+  figma.currentPage.setRelaunchData({ open: '' })
   closePlugin(msg.allClear)
   return
 

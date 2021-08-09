@@ -2,5 +2,8 @@
   "name": "QA Tester - Icons",
   "id": "924075028437575467",
   "api": "1.0.0",
-  "main": "dist/code.js"
+  "main": "dist/code.js",
+  "relaunchButtons": [
+    {"command": "open", "name": "QA Tester - Icons", "multipleSelection": true}
+  ]
 }
